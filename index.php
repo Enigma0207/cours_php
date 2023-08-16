@@ -13,15 +13,18 @@
     // $nomComplet =$nom. " ". $Prenom;
     // echo "<p> Bonjour Je suis ".$nom. " " .$Prenom."</p>";
 
-    // $phrase= "la programation est amusant";
-    // $mot= substr( $phrase, 3, 13);
-    //  echo " pour ton info" . " " .$mot. "<br>";
+    //1VOIR UN TEXTE DANS UNE POSITION DONNEE
 
-    //  $taille= strlen($phrase);
-    //  echo " pour la taille" . " " .$taille. "<br>" ;
+    $phrase= "la programation est amusant";
+    $mot= substr( $phrase, 3, 13);//A LA PSITION 3,DONNE MOI 13POSITION 
+     echo " pour ton info" . " " .$mot. "<br>";//programation    
 
-    //  $position1= strpos($phrase,"est");
-    //  echo " la position ".$position1."<br>" ;
+    //1.  POUR AVOIR LA TAILIE
+     $taille= strlen($phrase);
+     echo " pour la taille" . " " .$taille. "<br>" ;
+
+     $position1= strpos($phrase,"est");
+     echo " la position ".$position1."<br>" ;
 
 // FONCTION ISSET.
     // $maval= null;
@@ -68,8 +71,8 @@
 // // Vous avez des informations sur un produit : nom, prix et quantité.
 // $nomProduit = "Ordinateur portable";
 // $prixUnitaire = 899.99;
-// $prixUnitaire = 3;
-// $prixTotal = $prixUnitaire*$prixUnitaire;
+// $qtéUnitaire = 3;
+// $prixTotal = $prixUnitaire*$qtéUnitaire;
 // echo $prixTotal."<br>". "<br>" ;
  
 
