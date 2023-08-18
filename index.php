@@ -242,14 +242,21 @@ include('head.php');
 
 <br>
 <div class="container">
-
-    <form method="POST" action="#">
+    <label for="">civilite</label>
+    <select name="civility" id="">
+        
+        <option value="">sexe</option>
+        <option value="">homme</option>
+        <option value="">femme</option>
+    </select>
+<!-- avec la mthode POST on peut recuper nos données du formulaire $["name"] dans fichier action -->
+    <form method="POST" action="/action.php">
             <label for=""> Nom </label>
-            <input name="nom" class="form-control"  type="text" placeholder="Entrer le nom"> <br>
+            <input name="firstname" class="form-control"  type="text" placeholder="Entrer le nom"> <br>
 
             <br>
             <label for=""> Prénom </label>
-            <input name="prenom" class="form-control" type="text" placeholder="Entrer le prénom">  <br>
+            <input name="lastname" class="form-control" type="text" placeholder="Entrer le prénom">  <br>
 
             <br>
             <label for=""> Mot de passe  </label>
@@ -257,9 +264,30 @@ include('head.php');
 
             <input type="hidden" value="Une information caché" name="hidden" />
             <br>
+            <input type="radio"  class="form-check-input" name="country" id="france">
 
+            <label class="form-check-label" for="" >France</label>
+
+
+            <div><label for="">Date de naissance:</label></div>
+    
+            <input type="date" name="birthday">
+    
+            <div><label for="">Numéro de téléphone:</label></div>
+    
+            <input type="number" name="phone">
+    
+            <div><label for="">Commentaires:</label></div>
+    
+            <textarea name="message" id="" cols="30" rows="10"></textarea>
+    
             <input type="submit" value="Sauvegarder" class="btn btn-secondary">
-        </form>
+
+            <label id="conditions">J'accepte les conditions générales d'utilisation</label>
+
+        <input type="checkbox" id="scales" name="conditionner" /><br>
+           
+    </form>
 
 
 </div>
