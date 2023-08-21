@@ -5,6 +5,8 @@ $username = "root";
 $password = "";
 $db = "biblio";
 try {
+    // Créer une connexion à la base de données en utilisant PDO
+    /*on cree un objet pdo*/ 
 $pdo = new PDO("mysql:host=$servername;dbname=$db", $username, $password);
 // set the PDO error mode to exception
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -15,7 +17,7 @@ catch(PDOException $e)
 echo "Connection failed: " . $e->getMessage(); // affichez moi failed si cest pas bon
 }
 echo "<pre>";
-var_dump($_POST);
+var_dump($_POST); 
 echo "</pre>";
 die;
 
@@ -26,10 +28,13 @@ $email = "john@example.com";
 $message = "Hi, It's my first message.";
 
 // Requête d'insertion préparée
+//chaîne de caractères $sql qui contient une requête SQL d'insertion.
+//Spécifie les colonnes dans lesquelles vous souhaitez insérer des données (firstname, lastname, email, message).
+//VALEUR EN PARAMETTRE ALUES (:firstname, :lastname, :email, :message)
 $sql = "INSERT INTO userphp (firstname, lastname, email, message) VALUES (:firstname, :lastname, :email, :message)";
 $stmt = $pdo->prepare($sql);
 
-// Associer les valeurs aux paramètres
+// Associer les valeurs aux paramètres AVEC bindParam ()
 $stmt->bindParam(':firstname', $firstname);
 $stmt->bindParam(':lastname', $lastname);
 $stmt->bindParam(':email', $email);
