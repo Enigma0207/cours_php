@@ -1,4 +1,4 @@
-<!-- liaison php base des données -->
+<!-- LIAISON A LA BASE DES DONNEES avec mitra -->
 <?php
 $servername = "localhost";
 $username = "root";

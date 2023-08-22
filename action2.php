@@ -119,8 +119,8 @@ Dans le fichier HTML, assurez-vous que le formulaire envoie les données soumise
 //     $confirmation = htmlspecialchars ($_POST['confirmation']);
 //     $email = htmlspecialchars($_POST['email']);
 //     // $valider = htmlspecialchars($_POST['valider']);
-//     if(!empty($_POST['nom'])||!empty($_POST['prenom'])||!empty($_POST['motdepasse'])|| !empty($_POST['email'])|| !empty($_POST['confirmation']) ){
-//       if(($_POST['motdepasse'])===($_POST['confirmation'])){
+//     if(!empty( $nom)||!empty($prenom)||!empty($motdepasse )|| !empty($email)|| !empty( $confirmation) ){
+//       if(($motdepasse)===( $confirmation)){
 //         echo " $nom $prenom $email";
 //       } else{
 //         echo "les mots de passe ne correspondent pas";
@@ -135,3 +135,6 @@ Dans le fichier HTML, assurez-vous que le formulaire envoie les données soumise
 //  }
 
  ?>
+
+
+<!-- CEST POUR LIER LE FICHIER 0 NOTRE BASE DES DONNEES -->
