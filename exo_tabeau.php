@@ -18,10 +18,10 @@ Créez un tableau vide.
 
 <!-- resolution1 -->
  <?php
-   $tableau_vide=["1","2","3","4","5"];
+   $tableau_vide=[];
    array_push( $tableau_vide,"1","2","3","4","5");
     
-//   print_r($tableau_vide); 
+  print_r($tableau_vide); 
 $tableau1=["1","c","n","4","x"];
   
   array_splice($tableau1, 2, 1);//2=supprimer à la position 2,1= un seul element donc n
