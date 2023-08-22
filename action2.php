@@ -13,7 +13,7 @@
 
 <?php 
 
-//  empty permet de voir si la variable vide 
+//  empty permet de voir si la variable vide kjhj^hfjhn^pfjpfhhohph
 //   ! empty 
 // $_GET OU $_POST
 

@@ -20,6 +20,7 @@ Créez un tableau vide.
  <?php
    $tableau_vide=[];
    array_push( $tableau_vide,"1","2","3","4","5");
+  //  yhjtyutty utiuikuuyki uiuuiy
     
   print_r($tableau_vide); 
 $tableau1=["1","c","n","4","x"];
