@@ -7,7 +7,7 @@ require_once("action3.php");
     
     $nom = htmlspecialchars ($_POST['nom']);
     $prenom = htmlspecialchars ($_POST['prenom']);
-    $motdepasse = htmlspecialchars ($_POST['motdepasse']);
+    $motdepasse = htmlspecialchars ($_POST['motdepasse']);  
     $confirmation = htmlspecialchars ($_POST['confirmation']);
     $email = htmlspecialchars($_POST['email']);
     //crypter le mot de passe hasher

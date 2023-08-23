@@ -48,6 +48,7 @@
   }
 </style> 
 </head>
+<!-- ON VEUT RECUPERER LES DONNEES DU FORMULAIRE ET LE METTRE DANS LA BASE DES DONNEES -->
 <body>
     <form action="traitement3.php" method="post" enctype ="multipart/form-data">
       <div class="form-group">
